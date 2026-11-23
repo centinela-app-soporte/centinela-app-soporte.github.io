@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aviso de privacidad · Centinela</title>
+  <style>
+:root {
+  --fondo: #f5f7fa;
+  --tarjeta: #ffffff;
+  --texto: #1e293b;
+  --suave: #475569;
+  --borde: #e2e8f0;
+  --acento: #1e3a5f;
+  --aviso: #fef3c7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #0f172a;
+    --tarjeta: #1e293b;
+    --texto: #f1f5f9;
+    --suave: #cbd5e1;
+    --borde: #334155;
+    --acento: #93c5fd;
+    --aviso: #422006;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header { margin-bottom: 24px; }
+
+.marca {
+  color: var(--acento);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 { font-size: 30px; line-height: 1.2; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--acento); }
+
+p, li { color: var(--suave); }
+li { margin-bottom: 6px; }
+
+.fecha { font-size: 14px; color: var(--suave); }
+
+.tarjeta {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.aviso {
+  background: var(--aviso);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+a { color: var(--acento); }
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--borde);
+}
+th { color: var(--texto); }
+td { color: var(--suave); }
+
+ol.pasos li { margin-bottom: 10px; }
+
+footer {
+  margin-top: 48px;
+  font-size: 14px;
+  color: var(--suave);
+}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="marca" href="index.html">Centinela</a>
+    <h1>Aviso de privacidad</h1>
+    <p class="fecha">Última actualización: 19 de noviembre de 2026</p>
+  </header>
+
+  <p class="aviso">
+    Centinela es una aplicación independiente creada por estudiantes. No es
+    una aplicación oficial del Tecnológico Nacional de México ni de ninguno de
+    sus campus.
+  </p>
+
+  <h2>Quién es responsable de tus datos</h2>
+  <p>
+    El responsable del tratamiento de tus datos personales es
+    <strong>Equipo Centinela</strong>. Para cualquier duda o solicitud sobre
+    tus datos, escríbenos a
+    <a href="mailto:centinela.app.soporte@gmail.com">centinela.app.soporte@gmail.com</a>.
+  </p>
+
+  <h2>Qué datos recopilamos</h2>
+  <div class="tarjeta">
+    <table>
+      <tr><th>Dato</th><th>Para qué lo usamos</th></tr>
+      <tr>
+        <td>Correo electrónico institucional</td>
+        <td>Crear tu cuenta, enviarte el código para iniciar sesión y confirmar que perteneces a la comunidad estudiantil.</td>
+      </tr>
+      <tr>
+        <td>Nombre</td>
+        <td>Mostrarlo junto a tus preguntas y respuestas en el foro.</td>
+      </tr>
+      <tr>
+        <td>Número de control, carrera y semestre (opcionales)</td>
+        <td>Completar tu perfil. No se muestran a otros usuarios.</td>
+      </tr>
+      <tr>
+        <td>Preguntas, respuestas y etiquetas que publicas en el foro</td>
+        <td>Mostrarlas a otros usuarios para resolver dudas académicas.</td>
+      </tr>
+      <tr>
+        <td>Preguntas guardadas, recordatorios de fechas y usuarios que bloqueas</td>
+        <td>Personalizar lo que ves en la aplicación.</td>
+      </tr>
+      <tr>
+        <td>Reportes de contenido que envías</td>
+        <td>Revisar y moderar contenido inapropiado.</td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    Centinela <strong>no</strong> recopila tu ubicación, tus contactos, tus
+    fotos ni datos de pago. No muestra publicidad, no rastrea tu actividad en
+    otras aplicaciones y <strong>no vende ni renta</strong> tus datos.
+  </p>
+
+  <h2>Quién más ve tus datos</h2>
+  <ul>
+    <li>
+      <strong>Otros usuarios</strong> ven tu nombre, tu rol (alumno, profesor o
+      administración) y lo que publicas en el foro. Tu correo, número de
+      control, carrera y semestre no se muestran a otros usuarios.
+    </li>
+    <li>
+      <strong>Los administradores de Centinela</strong> pueden ver los datos de
+      tu perfil para gestionar cuentas, roles y reportes de contenido.
+    </li>
+    <li>
+      <strong>Proveedores que hacen funcionar el servicio:</strong>
+      Supabase, que almacena la base de datos en servidores ubicados en
+      Estados Unidos, y Brevo, que envía los correos con tu código de acceso.
+      Solo usan tus datos para prestarnos ese servicio.
+    </li>
+  </ul>
+
+  <h2>Cuánto tiempo los conservamos</h2>
+  <p>
+    Conservamos tus datos mientras tengas una cuenta. Si la eliminas, se
+    borran tu perfil, tus recordatorios, tus preguntas guardadas y tus
+    bloqueos. Tus preguntas y respuestas del foro se conservan
+    <strong>sin tu nombre ni ningún dato que te identifique</strong>, para no
+    romper las conversaciones de otros usuarios.
+  </p>
+
+  <h2>Tus derechos</h2>
+  <p>
+    Puedes acceder a tus datos, corregirlos, pedir que los eliminemos u
+    oponerte a su uso. Puedes editar tu perfil y eliminar tu cuenta
+    directamente en la aplicación; para cualquier otra solicitud, escríbenos a
+    <a href="mailto:centinela.app.soporte@gmail.com">centinela.app.soporte@gmail.com</a>.
+    Respondemos en un plazo máximo de 20 días hábiles.
+  </p>
+  <p>
+    <a href="eliminar-cuenta.html">Cómo eliminar tu cuenta y tus datos</a>
+  </p>
+
+  <h2>Seguridad</h2>
+  <p>
+    Las conexiones con la aplicación están cifradas y el acceso a los datos
+    está restringido por reglas que solo permiten a cada usuario ver y
+    modificar lo que le corresponde.
+  </p>
+
+  <h2>Menores de edad</h2>
+  <p>
+    Centinela está dirigida a estudiantes de educación superior y no está
+    pensada para menores de 13 años.
+  </p>
+
+  <h2>Cambios a este aviso</h2>
+  <p>
+    Si cambiamos este aviso, actualizaremos la fecha de arriba y, si el cambio
+    es importante, lo anunciaremos en la aplicación.
+  </p>
+
+  <footer>Equipo Centinela · centinela.app.soporte@gmail.com</footer>
+</main>
+</body>
+</html>

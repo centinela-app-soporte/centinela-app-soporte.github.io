@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centinela</title>
+  <style>
+:root {
+  --fondo: #f5f7fa;
+  --tarjeta: #ffffff;
+  --texto: #1e293b;
+  --suave: #475569;
+  --borde: #e2e8f0;
+  --acento: #1e3a5f;
+  --aviso: #fef3c7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #0f172a;
+    --tarjeta: #1e293b;
+    --texto: #f1f5f9;
+    --suave: #cbd5e1;
+    --borde: #334155;
+    --acento: #93c5fd;
+    --aviso: #422006;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header { margin-bottom: 24px; }
+
+.marca {
+  color: var(--acento);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 { font-size: 30px; line-height: 1.2; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--acento); }
+
+p, li { color: var(--suave); }
+li { margin-bottom: 6px; }
+
+.fecha { font-size: 14px; color: var(--suave); }
+
+.tarjeta {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.aviso {
+  background: var(--aviso);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+a { color: var(--acento); }
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--borde);
+}
+th { color: var(--texto); }
+td { color: var(--suave); }
+
+ol.pasos li { margin-bottom: 10px; }
+
+footer {
+  margin-top: 48px;
+  font-size: 14px;
+  color: var(--suave);
+}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Centinela</h1>
+    <p>
+      Aplicación de apoyo académico: avisos, procesos escolares, fechas
+      importantes y un foro donde los profesores validan respuestas.
+    </p>
+  </header>
+
+  <p class="aviso">
+    Centinela es una aplicación independiente creada por estudiantes. No es
+    una aplicación oficial del Tecnológico Nacional de México ni de ninguno de
+    sus campus.
+  </p>
+
+  <h2>Descargar para Android</h2>
+  <div class="tarjeta">
+    <p>
+      <a href="https://github.com/centinela-app-soporte/centinela-app-soporte.github.io/releases/latest/download/centinela.apk"><strong>Descargar Centinela (APK)</strong></a>
+    </p>
+    <ol class="pasos">
+      <li>Abre este enlace desde tu teléfono Android y descarga el archivo.</li>
+      <li>
+        Ábrelo desde las notificaciones o desde <strong>Archivos &gt; Descargas</strong>.
+      </li>
+      <li>
+        Si Android lo pide, permite <strong>instalar apps de fuentes
+        desconocidas</strong> para tu navegador o tu app de archivos.
+      </li>
+      <li>Toca <strong>Instalar</strong> y entra con tu correo institucional.</li>
+    </ol>
+    <p>
+      Es una versión de prueba que se instala fuera de Google Play. Para
+      iPhone todavía no hay versión disponible.
+    </p>
+  </div>
+
+  <div class="tarjeta">
+    <p><a href="privacidad.html">Aviso de privacidad</a></p>
+    <p><a href="eliminar-cuenta.html">Eliminar tu cuenta y tus datos</a></p>
+    <p>
+      Soporte:
+      <a href="mailto:centinela.app.soporte@gmail.com">centinela.app.soporte@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>Equipo Centinela</footer>
+</main>
+</body>
+</html>

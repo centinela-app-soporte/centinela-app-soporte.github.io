@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eliminar tu cuenta · Centinela</title>
+  <style>
+:root {
+  --fondo: #f5f7fa;
+  --tarjeta: #ffffff;
+  --texto: #1e293b;
+  --suave: #475569;
+  --borde: #e2e8f0;
+  --acento: #1e3a5f;
+  --aviso: #fef3c7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #0f172a;
+    --tarjeta: #1e293b;
+    --texto: #f1f5f9;
+    --suave: #cbd5e1;
+    --borde: #334155;
+    --acento: #93c5fd;
+    --aviso: #422006;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header { margin-bottom: 24px; }
+
+.marca {
+  color: var(--acento);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 { font-size: 30px; line-height: 1.2; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--acento); }
+
+p, li { color: var(--suave); }
+li { margin-bottom: 6px; }
+
+.fecha { font-size: 14px; color: var(--suave); }
+
+.tarjeta {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.aviso {
+  background: var(--aviso);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+a { color: var(--acento); }
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--borde);
+}
+th { color: var(--texto); }
+td { color: var(--suave); }
+
+ol.pasos li { margin-bottom: 10px; }
+
+footer {
+  margin-top: 48px;
+  font-size: 14px;
+  color: var(--suave);
+}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="marca" href="index.html">Centinela</a>
+    <h1>Eliminar tu cuenta y tus datos</h1>
+    <p class="fecha">Aplicación Centinela, de Equipo Centinela</p>
+  </header>
+
+  <h2>Desde la aplicación</h2>
+  <div class="tarjeta">
+    <ol class="pasos">
+      <li>Abre Centinela e inicia sesión.</li>
+      <li>Ve a la pestaña <strong>Perfil</strong> y baja hasta el final.</li>
+      <li>Toca <strong>Eliminar mi cuenta</strong>.</li>
+      <li>Escribe <strong>ELIMINAR</strong> para confirmar y toca <strong>Eliminar cuenta</strong>.</li>
+    </ol>
+    <p>La eliminación es inmediata y no se puede deshacer.</p>
+  </div>
+
+  <h2>Si ya no tienes la aplicación</h2>
+  <div class="tarjeta">
+    <p>
+      Escribe a
+      <a href="mailto:centinela.app.soporte@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Centinela">centinela.app.soporte@gmail.com</a>
+      con el asunto <strong>"Eliminar mi cuenta de Centinela"</strong>, desde
+      el mismo correo con el que te registraste. Eliminaremos tu cuenta en un
+      plazo máximo de 30 días y te confirmaremos por correo.
+    </p>
+  </div>
+
+  <h2>Qué se elimina</h2>
+  <ul>
+    <li>Tu cuenta y tu correo electrónico.</li>
+    <li>Tu perfil: nombre, número de control, carrera, semestre y rol.</li>
+    <li>Tus recordatorios, tus preguntas guardadas y tu lista de usuarios bloqueados.</li>
+  </ul>
+
+  <h2>Qué se conserva</h2>
+  <ul>
+    <li>
+      Las preguntas y respuestas que publicaste en el foro se conservan
+      <strong>sin tu nombre ni ningún dato que te identifique</strong>, para no
+      romper las conversaciones de otros usuarios. Si quieres que también se
+      borren, elimínalas desde la aplicación antes de eliminar tu cuenta, o
+      pídenoslo en el mismo correo.
+    </li>
+    <li>
+      Los reportes de contenido que enviaste se conservan sin tu nombre para
+      fines de moderación.
+    </li>
+  </ul>
+
+  <p><a href="privacidad.html">Leer el aviso de privacidad completo</a></p>
+
+  <footer>Equipo Centinela · centinela.app.soporte@gmail.com</footer>
+</main>
+</body>
+</html>
