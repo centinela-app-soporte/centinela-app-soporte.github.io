@@ -8599,11 +8599,10 @@ return A.m(b.rs(c),$async$a41)
 case 6:o=e
 n=null
 if(!c.x)n="Recordatorio desactivado"
-else if(o)n="Te avisaremos un d\xeda antes y el mismo d\xeda"
-else n="Recordatorio guardado, pero las notificaciones est\xe1n desactivadas. Act\xedvalas para Centinela en los ajustes del tel\xe9fono."
+else n="Recordatorio guardado. Los avisos en el tel\xe9fono solo llegan con la app de Android."
 l=i
 l.Di()
-k=A.dr(0,o?1800:5000,0)
+k=A.dr(0,5000,0)
 l.n5(A.FP(null,null,null,null,null,B.L,null,A.ap(n,null,null,null,null,null,null),null,k,null,null,null,null,null,null,null,null,null,null))
 q=1
 s=5
